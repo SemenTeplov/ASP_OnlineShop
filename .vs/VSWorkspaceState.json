@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\OnlineShopWebApp",
+    "\\OnlineShopWebApp\\bin\\Debug",
+    "\\OnlineShopWebApp\\bin\\Debug\\net6.0",
+    "\\OnlineShopWebApp\\Properties"
   ],
-  "SelectedNode": "\\C:\\Users\\Админ\\Desktop\\Web Learning\\ASP_OnlineShop",
+  "SelectedNode": "\\OnlineShopWebApp\\Properties\\launchSettings.json",
   "PreviewInSolutionExplorer": false
 }
