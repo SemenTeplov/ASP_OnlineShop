@@ -13,12 +13,12 @@ namespace OnlineShopWebApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index(int Id, string Name, double Coast, string? Description)
         {
-            return View();
+            return Id + "\n" + Name + "\n" + Coast + "\n" + Description;
         }
 
-        public IActionResult Privacy()
+    public IActionResult Privacy()
         {
             return View();
         }
