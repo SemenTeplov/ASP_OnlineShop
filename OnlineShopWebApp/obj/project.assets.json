@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Админ\\Desktop\\Web Learning\\ASP_OnlineShop\\OnlineShopWebApp\\OnlineShopWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShopWebApp\\OnlineShopWebApp.csproj",
       "projectName": "OnlineShopWebApp",
-      "projectPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\ASP_OnlineShop\\OnlineShopWebApp\\OnlineShopWebApp.csproj",
+      "projectPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShopWebApp\\OnlineShopWebApp.csproj",
       "packagesPath": "C:\\Users\\Админ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\ASP_OnlineShop\\OnlineShopWebApp\\obj\\",
+      "outputPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShopWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\Админ\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

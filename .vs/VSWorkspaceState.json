@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OnlineShopWebApp",
-    "\\OnlineShopWebApp\\bin\\Debug",
-    "\\OnlineShopWebApp\\bin\\Debug\\net6.0",
-    "\\OnlineShopWebApp\\Properties"
+    "\\OnlineShopWebApp"
   ],
-  "SelectedNode": "\\OnlineShopWebApp\\Properties\\launchSettings.json",
   "PreviewInSolutionExplorer": false
 }
