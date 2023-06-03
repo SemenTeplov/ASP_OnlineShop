@@ -2,10 +2,10 @@
 
 namespace OnlineShopWebApp
 {
-    public class ProductsRepository
+    public class ProductsRepository : IProductsRepository
     {
-        private static List<Product> products = new List<Product>() 
-        { 
+        private List<Product> products = new List<Product>()
+        {
             new Product("Product1", 10, "Desc1", "#"),
             new Product("Product2", 20, "Desc2", "#"),
             new Product("Product3", 30, "Desc3", "#"),

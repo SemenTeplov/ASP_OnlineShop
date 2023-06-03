@@ -2,20 +2,20 @@
 
 namespace OnlineShopWebApp
 {
-    public static class CartsRepository
+    public class CartsRepository : ICartsRepository
     {
-        private static List<Cart> carts = new List<Cart>();
+        private List<Cart> carts = new List<Cart>();
 
-        public static Cart TryGetByUserId(string userId)
+        public Cart TryGetByUserId(string userId)
         {
             return carts.FirstOrDefault(x => x.UserId == userId);
         }
 
-        public static void Add(Product product, string userId)
+        public void Add(Product product, string userId)
         {
             var existingCart = TryGetByUserId(userId);
 
-            if (existingCart == null) 
+            if (existingCart == null)
             {
                 var newCart = new Cart()
                 {
@@ -31,29 +31,50 @@ namespace OnlineShopWebApp
                         }
                     }
                 };
-				carts.Add(newCart);
-			}
+                carts.Add(newCart);
+            }
             else
             {
                 var existingCartItem = existingCart.Items.FirstOrDefault(x => x.Product.Id == product.Id);
 
-                if (existingCartItem != null) 
+                if (existingCartItem != null)
                 {
                     existingCartItem.Amount += 1;
 
-				}
+                }
                 else
                 {
                     existingCart.Items.Add(new CartItem()
                     {
-                        Id= Guid.NewGuid(),
+                        Id = Guid.NewGuid(),
                         Amount = 1,
                         Product = product
                     });
 
-				}
+                }
+
+            }
+        }
+
+		public void DeacreseAmount(int productId, string userId)
+		{
+			var existingCart = TryGetByUserId(userId);		
+			var existingCartItem = existingCart?.Items?.FirstOrDefault(x => x.Product.Id == productId);
+
+			if (existingCartItem == null)
+			{
+                return;
 
 			}
+            existingCartItem.Amount -= 1;
+
+            if (existingCartItem.Amount == 0) existingCart.Items.Remove(existingCartItem);
+		}
+
+		public void Clear(string userId)
+		{
+			var existingCart = TryGetByUserId(userId);
+            carts.Remove(existingCart);
 		}
 	}
 }

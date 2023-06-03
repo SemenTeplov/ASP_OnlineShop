@@ -1,6 +1,6 @@
 ﻿@model Cart
 
-@if (Model == null)
+@if (Model == null || Model.Items.Count == 0)
 {
 	<h3>Карзина пустая</h3>
 }
@@ -15,6 +15,7 @@ else
 						<th>Цена руб</th>
 						<th>Количество</th>
 						<th>Стоимость руб</th>
+						<th></th>
 					</tr>
 				</thead>
 
@@ -26,6 +27,10 @@ else
 							<td>@item.Product.Coast</td>
 							<td>@item.Amount</td>
 							<td>@item.Cost</td>
+							<td>
+								<a class="btn btn-dark" href="/Cart/Add?productId=@item.Product.Id" role="button">+</a>
+								<a class="btn btn-dark" href="/Cart/DeacreseAmount?productId=@item.Product.Id" role="button">-</a>
+							</td>
 						</tr>
 					}
 				</tbody>
@@ -37,7 +42,8 @@ else
 			</div>
 			<div class="text-center">
 				<a class="btn btn-dark" href="/Home/Index" role="button">Продолжить покупки</a>
-				<a class="btn btn-dark" href="#" role="button">Оформить заказ</a>
+				<a class="btn btn-dark" href="/order/Index" role="button">Оформить заказ</a>
+				<a class="btn btn-danger" href="/Cart/Clear" role="button">Очистить корзину</a>
 			</div>
 		</div>
 	</div>

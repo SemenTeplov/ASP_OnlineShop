@@ -5,15 +5,17 @@ namespace OnlineShopWebApp.Controllers
 {
     public class CartController : Controller
     {
-        private readonly ProductsRepository productsRepository;
+        private readonly IProductsRepository productsRepository;
+        private readonly ICartsRepository cartsRepository;
 
-        public CartController()
+        public CartController(IProductsRepository productsRepository, ICartsRepository cartsRepository)
         {
-            productsRepository = new ProductsRepository();
+            this.productsRepository = productsRepository;
+            this.cartsRepository = cartsRepository;
         }
         public IActionResult Index(int id)
         {
-            var cart = CartsRepository.TryGetByUserId(Contstants.UserId);
+            var cart = cartsRepository.TryGetByUserId(Contstants.UserId);
 
             return View(cart);
             
@@ -21,10 +23,24 @@ namespace OnlineShopWebApp.Controllers
         public IActionResult Add(int productId)
         {
             var product = productsRepository.TryGetById(productId);
-            CartsRepository.Add(product, Contstants.UserId);
+            cartsRepository.Add(product, Contstants.UserId);
 
             return RedirectToAction("Index");
 
         }
-    }
+		public IActionResult DeacreseAmount(int productId)
+		{
+			cartsRepository.DeacreseAmount(productId, Contstants.UserId);
+
+			return RedirectToAction("Index");
+
+		}
+		public IActionResult Clear()
+		{
+			cartsRepository.Clear(Contstants.UserId);
+
+			return RedirectToAction("Index");
+
+		}
+	}
 }
