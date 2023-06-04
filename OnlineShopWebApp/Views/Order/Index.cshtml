@@ -1,15 +1,17 @@
-﻿<div class="row text-center">
-	<div class="col">
-		<label>ФИО</label>
-		<div><input type="text" /></div>
+﻿<form method="post">
+	<div class="row text-center">
+		<div class="col">
+			<label>ФИО</label>
+			<div><input type="text" name="name" /></div>
 		
-		<label>Адрес</label>
-		<div><input type="text" /></div>
+			<label>Адрес</label>
+			<div><input type="text" name="address" /></div>
 
-		<label>Телефон</label>
-		<div><input type="text" /></div>
+			<label>Телефон</label>
+			<div><input type="text" name="phone" /></div>
 
-		<br />
-		<a class="btn btn-dark" href="/order/Buy" role="button">Оформить заказ</a>
+			<br />
+			<button class="btn btn-dark" type="submit" asp-controller="Order" asp-action="Buy">Оформить заказ</button>
+		</div>
 	</div>
-</div>
+</form>

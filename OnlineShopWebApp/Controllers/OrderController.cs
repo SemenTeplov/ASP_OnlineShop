@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnlineShopWebApp.Models;
 
 namespace OnlineShopWebApp.Controllers
 {
@@ -17,10 +18,17 @@ namespace OnlineShopWebApp.Controllers
 		{ 
 			return View();
 		}
-		public IActionResult Buy()
+
+		[HttpPost]
+		public IActionResult Buy(UserDeliveryInfo user)
 		{
 			var excistingCart = cartsRepository.TryGetByUserId(Contstants.UserId);
-			ordersRepository.Add(excistingCart);
+			var order = new Order()
+			{
+				User = user,
+				Items = excistingCart.Items
+            };
+			ordersRepository.Add(order);
 			cartsRepository.Clear(Contstants.UserId);
 
 			return View();
