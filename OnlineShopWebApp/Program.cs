@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<IProductsRepository, ProductsRepository>();
 builder.Services.AddSingleton<ICartsRepository, CartsRepository>();
 builder.Services.AddSingleton<IOrdersRepository, OrdersRepository>();
+builder.Services.AddSingleton<IRolesRepository, RolesRepository>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

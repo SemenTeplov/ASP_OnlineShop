@@ -1,14 +1,28 @@
-﻿<form method="post">
-	<div class="row text-center">
-		<div class="col">
-			<label>ФИО</label>
-			<div><input type="text" name="name" /></div>
-		
-			<label>Адрес</label>
-			<div><input type="text" name="address" /></div>
+﻿@model UserDeliveryInfo
 
-			<label>Телефон</label>
-			<div><input type="text" name="phone" /></div>
+<form method="post">
+	<div class="row text-center">
+
+		<div class="text-danger font-weight-bold" asp-validation-summary="All"></div>
+
+		<div class="col">
+			<div>
+				<label asp-for="Name"></label>ФИО<br />
+				<input class="form-control" asp-for="Name" />
+				<span asp-validation-for="Name" />
+			</div>
+		
+			<div>
+				<label asp-for="Address"></label>Адрес<br />
+				<input class="form-control" asp-for="Address" />
+				<span asp-validation-for="Address" />
+			</div>
+
+			<div>
+				<label asp-for="Phone"></label>Телефон<br />
+				<input class="form-control" asp-for="Phone" />
+				<span asp-validation-for="Phone" />
+			</div>
 
 			<br />
 			<button class="btn btn-dark" type="submit" asp-controller="Order" asp-action="Buy">Оформить заказ</button>

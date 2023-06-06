@@ -1,9 +1,43 @@
-﻿<div class="row">
+﻿@model List<Product>
+
+<div class="row">
     
     @await Html.PartialAsync("AdminLeftMenu")
 
     <div class="col-9">
-        <h3>Список продуктов</h3>
+        <div class="row">
+            <h3>Список продуктов</h3>
+        </div>
+
+        <a href="/Admin/AddProduct">Добавить продукт</a>
+        
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <th>@(i + 1)</th>
+                            <th>@Model[i].Name</th>
+                            <th>@Model[i].Coast</th>
+                            <th><a href="/Admin/EditProduct?ProductId=@Model[i].Id">Редвктировать продукт</a></th>
+                            <th><a href="/Admin/RemoveProduct?ProductId=@Model[i].Id">Удалить продукт</a></th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
     </div>
     
 </div>
