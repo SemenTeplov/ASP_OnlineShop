@@ -8,7 +8,7 @@
         public OrderStatus orderStatus { get; set; }
         public DateTime CreateDateTime { get; set; }
 
-        public Order() 
+        public Order()
         {
             Id = Guid.NewGuid();
             orderStatus = OrderStatus.Created;

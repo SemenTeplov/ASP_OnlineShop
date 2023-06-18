@@ -8,11 +8,13 @@ namespace OnlineShopWebApp.Models
         [EmailAddress]
         public string UserName { get; set; }
         [Required]
+        public string Phone { get; set; }
+        [Required]
         [StringLength(100, MinimumLength = 4)]
         public string Password { get; set; }
         [Required]
         [StringLength(100, MinimumLength = 4)]
         [Compare("Password")]
-        public bool ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace OnlineShopWebApp
 {
-	public interface IOrdersRepository
+    public interface IOrdersRepository
 	{
 		void Add(Order order);
 		List<Order> GetAll();

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
+using OnlineShop.Db;
 using OnlineShopWebApp.Models;
 using System.Diagnostics;
 
@@ -18,22 +19,26 @@ namespace OnlineShopWebApp.Controllers
         public IActionResult Index()
         {
             var cart = cartsRepository.TryGetByUserId(Contstants.UserId);
-
             var products = productsRepository.GetAll();
+
+            var productsViewModels = new List<ProductViewModel>();
+
+            foreach (var product in products)
+            {
+                var productViewModel = new ProductViewModel
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Coast = product.Coast,
+                    Description = product.Description,
+                    ImagePath = product.ImagePath
+                };
+                productsViewModels.Add(productViewModel);
+            }
+
             ViewBag.ProductCount = cart?.Amount;
 
-            return View(products);
-        }
-
-    public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(productsViewModels);
         }
     }
 }
