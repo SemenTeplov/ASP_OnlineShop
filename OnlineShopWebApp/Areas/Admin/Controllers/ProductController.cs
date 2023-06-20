@@ -2,6 +2,7 @@
 using OnlineShop.Db;
 using OnlineShop.Db.Models;
 using OnlineShopWebApp.Areas.Admin.Models;
+using OnlineShopWebApp.Helper;
 using OnlineShopWebApp.Models;
 
 namespace OnlineShopWebApp.Areas.Admin.Controllers
@@ -19,22 +20,7 @@ namespace OnlineShopWebApp.Areas.Admin.Controllers
         {
             var products = productsRepository.GetAll();
 
-            var productsViewModels = new List<ProductViewModel>();
-
-            foreach (var product in products)
-            {
-                var productViewModel = new ProductViewModel
-                {
-                    Id = product.Id,
-                    Name = product.Name,
-                    Coast = product.Coast,
-                    Description = product.Description,
-                    ImagePath = product.ImagePath
-                };
-                productsViewModels.Add(productViewModel);
-            }
-
-            return View(productsViewModels);
+            return View(Mapping.ToProductViewModels(products));
         }
         public IActionResult AddProduct()
         {

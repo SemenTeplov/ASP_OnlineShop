@@ -14,7 +14,7 @@ builder.Host.UseSerilog((context, configuration) =>
                   .Enrich.WithProperty("ApplicationName", "Online Shop"));
 
 builder.Services.AddTransient<IProductsRepository, ProductsDbRepository>();
-builder.Services.AddSingleton<ICartsRepository, CartsRepository>();
+builder.Services.AddTransient<ICartsRepository, CartsDbRepository>();
 builder.Services.AddSingleton<IOrdersRepository, OrdersRepository>();
 builder.Services.AddSingleton<IRolesRepository, RolesRepository>();
 builder.Services.AddSingleton<IUsersManager, UsersManager>();

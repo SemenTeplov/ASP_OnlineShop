@@ -1,17 +1,23 @@
-﻿using OnlineShopWebApp.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineShop.Db.Models;
 
-namespace OnlineShopWebApp
+namespace OnlineShop.Db
 {
-    public class CartsRepository : ICartsRepository
+    public class CartsDbRepository : ICartsRepository
     {
-        private List<Cart> carts = new List<Cart>();
+        private readonly DatabaseContext databaseContext;
 
-        public Cart TryGetByUserId(string userId)
+		public CartsDbRepository(DatabaseContext databaseContext)
+		{
+			this.databaseContext = databaseContext;
+		}
+
+		public Cart TryGetByUserId(string userId)
         {
-            return carts.FirstOrDefault(x => x.UserId == userId);
+            return databaseContext.Carts.Include(x=>x.Items).ThenInclude(x=>x.Product).FirstOrDefault(x => x.UserId == userId);
         }
 
-        public void Add(ProductViewModel product, string userId)
+        public void Add(Product product, string userId)
         {
             var existingCart = TryGetByUserId(userId);
 
@@ -19,19 +25,19 @@ namespace OnlineShopWebApp
             {
                 var newCart = new Cart()
                 {
-                    Id = Guid.NewGuid(),
-                    UserId = userId,
-                    Items = new List<CartItem>
+                    UserId = userId
+				};
+                newCart.Items = new List<CartItem>
+                {
+                    new CartItem()
                     {
-                        new CartItem()
-                        {
-                            Id = Guid.NewGuid(),
-                            Amount = 1,
-                            Product = product
-                        }
+                        Amount = 1,
+                        Product = product,
+                        Cart = newCart
                     }
                 };
-                carts.Add(newCart);
+                
+				databaseContext.Carts.Add(newCart);
             }
             else
             {
@@ -46,15 +52,17 @@ namespace OnlineShopWebApp
                 {
                     existingCart.Items.Add(new CartItem()
                     {
-                        Id = Guid.NewGuid(),
                         Amount = 1,
-                        Product = product
-                    });
+                        Product = product,
+                        Cart = existingCart
+					});
 
                 }
 
             }
-        }
+            databaseContext.SaveChanges();
+
+		}
 
 		public void DeacreseAmount(Guid productId, string userId)
 		{
@@ -69,12 +77,15 @@ namespace OnlineShopWebApp
             existingCartItem.Amount -= 1;
 
             if (existingCartItem.Amount == 0) existingCart.Items.Remove(existingCartItem);
+
+			databaseContext.SaveChanges();
 		}
 
 		public void Clear(string userId)
 		{
 			var existingCart = TryGetByUserId(userId);
-            carts.Remove(existingCart);
+			databaseContext.Carts.Remove(existingCart);
+			databaseContext.SaveChanges();
 		}
 	}
 }

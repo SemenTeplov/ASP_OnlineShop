@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineShopWebApp.Models;
+using OnlineShop.Db;
+using OnlineShopWebApp.Helper;
 
 namespace OnlineShopWebApp.Controllers
 {
@@ -27,10 +29,11 @@ namespace OnlineShopWebApp.Controllers
 				return View("Index", user);
 			}
 			var excistingCart = cartsRepository.TryGetByUserId(Contstants.UserId);
+			var excistingCartViewModel = Mapping.ToCartViewModel(excistingCart);
 			var order = new Order()
 			{
 				User = user,
-				Items = excistingCart.Items
+				Items = excistingCartViewModel.Items
             };
 			ordersRepository.Add(order);
 			cartsRepository.Clear(Contstants.UserId);

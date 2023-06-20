@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using OnlineShop.Db;
+using OnlineShopWebApp.Helper;
 using OnlineShopWebApp.Models;
 
 namespace OnlineShopWebApp.Controllers
@@ -19,22 +20,13 @@ namespace OnlineShopWebApp.Controllers
         {
             var cart = cartsRepository.TryGetByUserId(Contstants.UserId);
 
-            return View(cart);
+            return View(Mapping.ToCartViewModel(cart));
             
         }
         public IActionResult Add(Guid productId)
         {
             var product = productsRepository.TryGetById(productId);
-            var productViewModel = new ProductViewModel
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Coast = product.Coast,
-                Description = product.Description,
-                ImagePath = product.ImagePath
-            };
-
-            cartsRepository.Add(productViewModel, Contstants.UserId);
+            cartsRepository.Add(product, Contstants.UserId);
 
             return RedirectToAction("Index");
 
