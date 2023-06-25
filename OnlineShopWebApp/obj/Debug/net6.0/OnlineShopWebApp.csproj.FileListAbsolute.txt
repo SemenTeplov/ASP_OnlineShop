@@ -129,3 +129,7 @@ C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6
 C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\OnlineShop.Db.dll
 C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\OnlineShop.Db.pdb
+C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\bin\Debug\net6.0\System.CodeDom.dll
