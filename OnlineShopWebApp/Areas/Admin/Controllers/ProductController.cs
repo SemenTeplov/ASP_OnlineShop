@@ -39,19 +39,20 @@ namespace OnlineShopWebApp.Areas.Admin.Controllers
             {
                 Name = product.Name,
                 Coast = product.Coast,
-                Description = product.Description
-            };
+                Description = product.Description,
+				ImagePath = product.ImagePath
+			};
 
             productsRepository.Add(productDb);
 
-            return RedirectToAction("Product");
+            return RedirectToAction("AddProduct");
         }
 
         public IActionResult EditProduct(Guid productId)
         {
             var product = productsRepository.TryGetById(productId);
 
-            return View(product);
+            return View(Mapping.ToProductViewModel(product));
         }
 
         [HttpPost]
@@ -66,12 +67,13 @@ namespace OnlineShopWebApp.Areas.Admin.Controllers
             {
                 Name = product.Name,
                 Coast = product.Coast,
-                Description = product.Description
-            };
+                Description = product.Description,
+				ImagePath = product.ImagePath
+			};
 
             productsRepository.Update(productDb);
 
-            return RedirectToAction("Product");
+            return RedirectToAction("EditProduct");
         }
     }
 }

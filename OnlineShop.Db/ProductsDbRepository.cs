@@ -25,7 +25,6 @@ namespace OnlineShop.Db
 
         public void Add(Product product)
         {
-            product.ImagePath = "https://mobimg.b-cdn.net/v3/fetch/fd/fd6d44593e0493f5fec6a8bfdd197be2.jpeg";
             dbContext_.Products.Add(product);
             dbContext_.SaveChanges();
         }
@@ -37,7 +36,9 @@ namespace OnlineShop.Db
 
         public Product TryGetById(Guid id)
         {
-            return dbContext_.Products.FirstOrDefault(product => product.Id == id);
+            var product = dbContext_.Products.FirstOrDefault(product => product.Id == id);
+
+			return product;
         }
 
         public void Update(Product product)
@@ -49,7 +50,9 @@ namespace OnlineShop.Db
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
             existingProduct.Coast = product.Coast;
-            dbContext_.SaveChanges();
+			existingProduct.ImagePath = product.ImagePath;
+
+			dbContext_.SaveChanges();
         }
     }
 }

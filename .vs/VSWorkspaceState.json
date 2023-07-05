@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\OnlineShopWebApp",
-    "\\OnlineShopWebApp\\Views\\Cart",
-    "\\OnlineShopWebApp\\Views\\Home",
-    "\\OnlineShopWebApp\\Views\\Product"
+    ""
   ],
-  "SelectedNode": "\\OnlineShopWebApp\\OnlineShopWebApp.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -9,125 +9,125 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineShopWebApp
 build_property.RootNamespace = OnlineShopWebApp
-build_property.ProjectDir = C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp\
+build_property.ProjectDir = C:\Users\Админ\Desktop\Web Learning\OnlineShop\OnlineShopWebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Админ\Desktop\Web Learning\Project\OnlineShopWebApp
+build_property.MSBuildProjectDirectory = C:\Users\Админ\Desktop\Web Learning\OnlineShop\OnlineShopWebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Order/OrderDetails.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Order/OrderDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcT3JkZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Order/Orders.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Order/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Product/AddProduct.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Product/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Product/EditProduct.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Product/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Product/Products.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Product/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Role/AddRole.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Role/AddRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Role/Roles.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Role/Roles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxSb2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/Shared/AdminLeftMenu.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/Shared/AdminLeftMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEFkbWluTGVmdE1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/User/ChangePassword.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/User/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/User/UserAccount.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/User/UserAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVc2VyQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/User/Users.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/User/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Account/Login.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Account/Registr.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Account/Registr.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Cart/Index.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Home/Index.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Home/Privacy.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Order/Buy.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Order/Buy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQnV5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Order/Index.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Product/Index.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/Components/Cart/Cart.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/Components/Cart/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/Error.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/Footer.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/Header.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/_ViewImports.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/_ViewStart.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Админ/Desktop/Web Learning/Project/OnlineShopWebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/Админ/Desktop/Web Learning/OnlineShop/OnlineShopWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pc1acjhfzq

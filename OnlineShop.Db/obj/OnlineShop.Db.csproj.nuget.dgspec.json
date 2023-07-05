@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShop.Db\\OnlineShop.Db.csproj": {}
+    "C:\\Users\\Админ\\Desktop\\Web Learning\\OnlineShop\\OnlineShop.Db\\OnlineShop.Db.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShop.Db\\OnlineShop.Db.csproj": {
+    "C:\\Users\\Админ\\Desktop\\Web Learning\\OnlineShop\\OnlineShop.Db\\OnlineShop.Db.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShop.Db\\OnlineShop.Db.csproj",
+        "projectUniqueName": "C:\\Users\\Админ\\Desktop\\Web Learning\\OnlineShop\\OnlineShop.Db\\OnlineShop.Db.csproj",
         "projectName": "OnlineShop.Db",
-        "projectPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShop.Db\\OnlineShop.Db.csproj",
+        "projectPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\OnlineShop\\OnlineShop.Db\\OnlineShop.Db.csproj",
         "packagesPath": "C:\\Users\\Админ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\Project\\OnlineShop.Db\\obj\\",
+        "outputPath": "C:\\Users\\Админ\\Desktop\\Web Learning\\OnlineShop\\OnlineShop.Db\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\Админ\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

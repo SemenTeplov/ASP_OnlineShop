@@ -42,7 +42,17 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-6">
-			<button type="submit" asp-area="Admin" asp-controller="Product" asp-action="EditProduct">Редактировать</button>
+			<label asp-for="ImagePath"></label><br />
+			<input class="form-control" asp-for="ImagePath" />
+			<span asp-validation-for="ImagePath" />
+		</div>
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-6">
+			<button type="submit" asp-area="Admin" asp-controller="Product" asp-action="EditProduct" asp-route-productId="@Model.Id">Редактировать</button>
 		</div>
 		<div class="col"></div>
 	</div>
