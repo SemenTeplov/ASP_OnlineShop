@@ -1,0 +1,52 @@
+﻿@model ProductViewModel
+
+<div class="text-center">
+	<h3>Удаление продукта</h3>
+</div>
+
+<div class="text-danger font-weight-bold" asp-validation-summary="All"></div>
+
+<input type="hidden" name="Id" value="@Model?.Id" />
+
+<div class="row">
+	<div class="col"></div>
+	<div class="col-6 text-center">
+		@Html.DisplayFor(model => model.Name)
+	</div>
+	<div class="col"></div>
+</div>
+
+<div class="row">
+	<div class="col"></div>
+	<div class="col-6 text-center">
+		@Html.DisplayFor(model => model.Description)
+	</div>
+	<div class="col"></div>
+</div>
+
+<div class="row">
+	<div class="col"></div>
+	<div class="col-6 text-center">
+		@Html.DisplayFor(model => model.Coast)
+	</div>
+	<div class="col"></div>
+</div>
+
+<div class="row">
+	<div class="col"></div>
+	<div class="col-6 text-center">
+		@Html.DisplayFor(model => model.ImagePath)
+	</div>
+	<div class="col"></div>
+</div>
+
+<div class="row">
+	<div class="col"></div>
+	<div class="col-6">
+		@using (Html.BeginForm())
+		{
+			<button type="submit" asp-area="Admin" asp-controller="Product" asp-action="RemoveProduct">Удалить</button>
+		}
+	</div>
+	<div class="col"></div>
+</div>

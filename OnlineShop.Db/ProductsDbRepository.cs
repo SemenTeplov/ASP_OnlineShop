@@ -54,5 +54,11 @@ namespace OnlineShop.Db
 
 			dbContext_.SaveChanges();
         }
+
+        /*public void Remove(Product product)
+        {
+            dbContext_.Products.Remove(product);
+            dbContext_.SaveChangesAsync();
+        }*/
     }
 }

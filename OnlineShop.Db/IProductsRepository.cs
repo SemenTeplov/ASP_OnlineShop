@@ -8,5 +8,7 @@ namespace OnlineShop.Db
         Product TryGetById(Guid id);
         void Add(Product product);
         void Update(Product product);
-    }
+        //public void Remove(Product product);
+
+	}
 }

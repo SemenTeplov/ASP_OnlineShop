@@ -11,12 +11,14 @@ namespace OnlineShopWebApp.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IProductsRepository productsRepository;
+		private readonly DatabaseContext dbContext_;
 
-        public ProductController(IProductsRepository productsRepository)
-        {
-            this.productsRepository = productsRepository;
-        }
-        public IActionResult Products()
+		public ProductController(IProductsRepository productsRepository_, DatabaseContext dbContext_)
+		{
+			this.productsRepository = productsRepository_;
+			this.dbContext_ = dbContext_;
+		}
+		public IActionResult Products()
         {
             var products = productsRepository.GetAll();
 
@@ -73,7 +75,33 @@ namespace OnlineShopWebApp.Areas.Admin.Controllers
 
             productsRepository.Update(productDb);
 
-            return RedirectToAction("EditProduct");
+            return RedirectPermanent("../Order/Orders");
         }
-    }
+
+        [HttpGet]
+		public IActionResult RemoveProduct(Guid productId)
+		{
+			var product = productsRepository.TryGetById(productId);
+  
+			return View(Mapping.ToProductViewModel(product));
+		}
+
+		[HttpPost, ActionName("RemoveProduct")]
+		public async Task<IActionResult> RemoveProduct(ProductViewModel product)
+		{
+            var productDb = new Product
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Coast = product.Coast,
+                Description = product.Description,
+                ImagePath = product.ImagePath
+            };
+
+			//productsRepository.Remove(productDb);
+			dbContext_.Products.Remove(productDb);
+			dbContext_.SaveChangesAsync();
+			return RedirectPermanent("../Order/Orders");
+		}
+	}
 }
